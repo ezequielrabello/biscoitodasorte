@@ -1,6 +1,6 @@
 # Fortune Cookie 🍪
 
-<img src="/assets/github_1.gif">
+<img src="/assets/github_11.gif">
 
 ## 🔧 Technologies
 
