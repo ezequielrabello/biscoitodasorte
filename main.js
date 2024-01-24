@@ -4,14 +4,14 @@ var screen2 = window.document.querySelector('.screen2')
 var bto_1 = window.document.querySelector('button.bto_1')
 var bto_2 = window.document.querySelector('button.bto_2')
 var phrase = window.document.querySelector('h5#frase')
-let lisFra = ['Escolha as suas batalhas e não desista até vencê-las.', 
-'É sem medo de errar que conseguimos os melhores acertos.',
-'A vida é muito curta, por isso, faça valer a pena.',
-'O fracasso é apenas uma oportunidade de começar de novo.', 
-'A verdadeira mudança começa de dentro para fora.', 
-'Não deixe que seus sonhos percam a força de voar! ', 
-'Se queres ser feliz amanhã, tenta hoje mesmo.',
-'Para percorrer uma maratorna é preciso dar um passo de cada vez.',
+let lisFra = ["Choose your battles and don't give up until you beat them!", 
+'Only without fear to make mistakes we learn how to get it right.',
+'Life is short, so make it worth it!',
+'Failure is only the opportunity more intelligently to begin again.', 
+'True change starts from the inside out.', 
+"Don't let your dreams lose their power to fly!", 
+'If you want to be happy tomorrow, try today.',
+'To run a marathon you have to take one step at a time.',
 ]
 
 
