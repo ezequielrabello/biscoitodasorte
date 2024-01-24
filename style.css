@@ -1,0 +1,167 @@
+/* configuracoes iniciais padrao */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --color-text: #34355B;
+  --color-background-button: #FF9500;
+}
+
+.hide {
+  display: none;
+}
+
+
+/* iniciando pelo body  */
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(90deg, #190361 0%, rgb(187, 0, 255) 100%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  animation: changeColor 10s infinite ease-in-out;
+  background-size: 200% 200%;
+}
+
+main {
+  width: min(42.8rem, 90%);
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.80);
+  border-radius: .5rem;
+
+  text-align: center;
+  color: var(--color-text);
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.screen1 p {
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  margin: 1.4rem 0 2.6rem;
+}
+
+img {
+  cursor: pointer;
+}
+
+
+.screen2 h5 {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 2.4rem;
+  padding: 1rem;
+  background: #E4EDF1;
+  box-shadow: .2rem .2rem .2rem 0 rgba(85, 85, 85, 0.50);
+  font-weight: 400;
+  color: black;
+  margin: 1.7rem 0;
+
+  animation: goUp 1s ease-in-out;
+}
+
+.img2 {
+  margin-bottom: 1.7rem;
+}
+
+
+.screen2 button {
+  border: none;
+  border-radius: .4rem;
+  background-color: var(--color-background-button);
+  padding: 1.6rem;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bto_1 {
+  background-color: #fff;
+  border: 0;
+}
+
+.img:hover {
+  animation: treme 0.3s infinite ease-in-out;
+}
+
+@keyframes treme {
+  
+  0% {
+    margin-left: 0;
+    transform: rotateZ(1deg);}
+  25% {
+    margin-left: 5px; 
+    transform: rotateZ(-1deg);}
+  50% {
+    margin-left: 0;
+    transform: rotateZ(1deg);}
+  75% {
+    margin-left: -5px;
+    transform: rotateZ(-1deg);}
+  100% {
+    margin-left: 0;
+    transform: rotateZ(1deg);}
+}
+
+@keyframes goUp {
+  
+  0% {
+    transform: translateY(+50rem);
+    scale: 0;
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: translateY(0);
+    scale: 100%;
+    opacity: 1;
+  }
+}
+
+
+@keyframes changeColor{
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  /* 
+  outra forma que animar o background porem
+  nao tao legal
+
+  25% {
+    background: linear-gradient(90deg, #190361 0%, #B0F 100%); 
+  }
+  50% {
+    background: linear-gradient(180deg, #190361 0%, #B0F 100%);
+  }
+  75% {
+    background: linear-gradient(270deg, #190361 0%, #B0F 100%);
+  }
+  100% {
+    background: linear-gradient(360deg, #190361 0%, #B0F 100%);
+  } 
+  */
+
+
